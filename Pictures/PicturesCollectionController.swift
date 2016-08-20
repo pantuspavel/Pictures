@@ -8,17 +8,15 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class PicturesCollectionController: UICollectionViewController,
                                     UICollectionViewDelegateFlowLayout {
 
-    private let picturesCount = 100
+    private let picturesCount = 16
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(PictureCell.self, forCellWithReuseIdentifier: PictureCell.reuseIdentifier())
     }
 
     // MARK: UICollectionViewDataSource
@@ -32,10 +30,10 @@ class PicturesCollectionController: UICollectionViewController,
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        cell.backgroundColor = UIColor.green
-    
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PictureCell.reuseIdentifier(), for: indexPath) as! PictureCell
+
+        cell.configureWithImage(UIImage(named: "p\(indexPath.row + 1)")!)
+
         return cell
     }
 

@@ -12,6 +12,7 @@
 		E90554A71D68912A00A42626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90554A61D68912A00A42626 /* Assets.xcassets */; };
 		E90554AA1D68912A00A42626 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90554A81D68912A00A42626 /* LaunchScreen.storyboard */; };
 		E90554B21D68947A00A42626 /* PicturesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90554B11D68947A00A42626 /* PicturesCollectionController.swift */; };
+		E90554B41D68A00700A42626 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90554B31D68A00700A42626 /* PictureCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E90554A91D68912A00A42626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90554AB1D68912A00A42626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E90554B11D68947A00A42626 /* PicturesCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicturesCollectionController.swift; sourceTree = "<group>"; };
+		E90554B31D68A00700A42626 /* PictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				E90554A81D68912A00A42626 /* LaunchScreen.storyboard */,
 				E90554AB1D68912A00A42626 /* Info.plist */,
 				E90554B11D68947A00A42626 /* PicturesCollectionController.swift */,
+				E90554B31D68A00700A42626 /* PictureCell.swift */,
 			);
 			path = Pictures;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				E90554B21D68947A00A42626 /* PicturesCollectionController.swift in Sources */,
 				E90554A01D68912A00A42626 /* AppDelegate.swift in Sources */,
+				E90554B41D68A00700A42626 /* PictureCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				E90554B01D68912A00A42626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
