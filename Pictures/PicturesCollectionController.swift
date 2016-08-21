@@ -40,6 +40,9 @@ class PicturesCollectionController: UICollectionViewController,
     // MARK: UICollectionViewDelegateFlowLayout
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if (indexPath.row == 2) {
+            return CGSize(width: 200, height: 200)
+        }
         return CGSize(width: 100, height: 100)
     }
 

@@ -21,7 +21,10 @@ class PictureCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+
+        picture.clipsToBounds = true
+        picture.contentMode = .scaleAspectFill
+
         translatesAutoresizingMaskIntoConstraints = false
         picture.translatesAutoresizingMaskIntoConstraints = false
 
